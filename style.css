@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background-color: white;
+  padding: 1.5rem;
+}
+body {
+  background-color: rgb(17, 17, 17);
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+/* P {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: inline-block;
+} */
+
+.results {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  /* background-color: wheat; */
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+}
+.scoreboard {
+  border: 0.3rem solid white;
+  border-radius: 10%;
+  width: 8rem;
+  height: 10rem;
+  background-color: teal;
+  /* margin: 1.2rem; */
+  text-align: center;
+}
+.label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.score {
+  font-size: 8rem;
+  font-weight: 900;
+  margin: -1rem 0;
+}
+#taunt {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin: 2rem 0;
+}
+.choices {
+  text-align: center;
+}
+.choice {
+  border: 0.3rem solid white;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 2rem;
+  display: inline-block;
+  opacity: 80%;
+  transition-duration: 300ms;
+  /* transition-timing-function: ease-in; */
+}
+.choice:hover {
+  opacity: 100%;
+  background-color: green;
+  transform: rotate(360deg);
+  cursor: pointer;
+}
