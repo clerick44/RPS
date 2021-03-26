@@ -39,8 +39,8 @@ function playRound(playerSelection) {
   // playerInput();
   computerPlay();
   if (playerSelection == computerSelection) {
-    alert("It's a tie!");
-    message.innerHTML = "It's a tie dawg!";
+    // alert("It's a tie!");
+    message.innerText = "It's a tie dawg!";
   } else if (
     (playerSelection == "ROCK" && computerSelection == "SCISSORS") ||
     (playerSelection == "PAPER" && computerSelection == "ROCK") ||
@@ -48,8 +48,10 @@ function playRound(playerSelection) {
   ) {
     playerWin++;
     // alert(`You win! ${playerSelection} beats ${computerSelection}`);
+    message.innerText = `You win! ${playerSelection} beats ${computerSelection}`;
     userScore.innerHTML = playerWin;
   } else {
+    message.innerText = `You lose! ${computerSelection} beats ${playerSelection}`;
     computerWin++;
     // alert(`You lose! ${computerSelection} beats ${playerSelection}`);
     computerScore.innerHTML = computerWin;
